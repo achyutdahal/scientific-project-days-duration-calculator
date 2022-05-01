@@ -5,7 +5,7 @@ namespace src\Service\Cli;
 class CliApp
 {
     /** @var StandardInput */
-    private $standardInput;
+    private StandardInput $standardInput;
 
     public function __construct(StandardInput $standardInput)
     {

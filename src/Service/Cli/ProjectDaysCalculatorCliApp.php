@@ -10,7 +10,7 @@ class ProjectDaysCalculatorCliApp extends CliApp
 
     public function printAppInfo()
     {
-        $this->print("Welcome to Day Different Calculator");
+        $this->print("Welcome to Project Days Calculator");
         $this->addLine();
         $this->print("-------------------------------------------");
         $this->addLine();

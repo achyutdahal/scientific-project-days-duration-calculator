@@ -9,7 +9,7 @@ class ProjectDaysCalculatorClipAppTest extends \PHPUnit\Framework\TestCase
     {
         $standardInput = $this->prophesize(\src\Service\Cli\StandardInput::class);
         $app = new \src\Service\Cli\ProjectDaysCalculatorCliApp($standardInput->reveal());
-        $this->expectOutputString("Welcome to Day Different Calculator
+        $this->expectOutputString("Welcome to Project Days Calculator
 -------------------------------------------
 This app will return the total no of days between the supplied start and end date EXCLUDING START AND END DATE.
 End date will be used as start if the supplied end date is before the supplied start date
