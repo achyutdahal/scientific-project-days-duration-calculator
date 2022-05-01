@@ -23,7 +23,7 @@ while (!$exitProgram) {
     list($startDate, $endDate) = $app->retrieveStartAndEndDate();
     $dateValidator = $validator->get(ValidationFactory::DATE_VALIDATOR);
     if (!$dateValidator->isValid($startDate) || !$dateValidator->isValid($endDate)) {
-        $app->print("Invalid date. Date must be valid date in the format mm/dd/yyyy");
+        $app->print("Invalid date. Date must be valid and should be in the format mm/dd/yyyy");
         $app->addLine();
         $app->print("Do you want to try again? [y] ? ");
         $validationResponse = strtolower($app->getUserInput());
